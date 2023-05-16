@@ -468,20 +468,13 @@ utilize the SDK.
     library and to connect to the UCM environment. In your Powershell
     ISE, open the file (ucm.py) and verify this section:
 ```python
-> *from ciscoaxl import axl*
->
-> * *
->
-> *cucm = \'cucm1.dcloud.cisco.com\'*
->
-> *username = \'axlapiuser\'*
->
-> *password = \'dCloud123!\'*
->
-> *version = \'12.5\'*
->
-> *ucm =
-> axl(username=username,password=password,cucm=cucm,cucm_version=version)*
+from ciscoaxl import axl
+ 
+cucm = 'cucm1.dcloud.cisco.com'
+username = 'axlapiuser'
+password = 'dCloud123!'
+version = '12.5'
+ucm = axl(username=username,password=password,cucm=cucm,cucm_version=version)
 ```
 > \*\*\*\*This should look familiar as it's the same info we created in
 > our environment variables in Postman. This isn't the recommended way
@@ -491,14 +484,14 @@ utilize the SDK.
 -   Now let's query to see if we can find the phone we created in
     Postman. Add the following to your script:
 ```python
-*for phone in ucm.get_phones():*
+for phone in ucm.get_phones():
 
-*print(phone.name)*
+print(phone.name)
 ```
 -   Save the file and run '**py .\\ucm.py'** in the terminal window.
 
--   You should see a list of phones including the one you created
-    `(SEPA4A4A4A4A4A4)`
+-   You should see a list of phones including the one you created *(SEPA4A4A4A4A4A4)*
+
 
 > ![A screenshot of a computer Description automatically generated](media/image14.png)
 
@@ -506,11 +499,10 @@ utilize the SDK.
     may need to utililze for reporting/tracking assets. Update your
     script body with the following commands:
 ```python
-*phoneslist = ucm.get_phones()*
+phoneslist = ucm.get_phones()
 
-*for phones in phoneslist:*
-
-*print (phones)*
+for phones in phoneslist:
+print (phones)
 ```
 -   This will give us all the data for all the phones. That may not be
     useful for you. Let's pair it down to get the description, name,
@@ -518,14 +510,10 @@ utilize the SDK.
 
 -   Update your print statement to return only those items:
 ```python
-> *phoneslist = ucm.get_phones()*
->
-> * *
->
-> *for phones in phoneslist:*
->
-> *print (phones.description, phones.name,
-> phones\[\'locationName\'\]\[\'\_value_1\'\], phones.product)*
+phoneslist = ucm.get_phones()
+ 
+for phones in phoneslist:
+print (phones.description, phones.name, phones['locationName']['_value_1'], phones.product)
 ```
 -   Your results should look like this after you save the file and run
     it:
@@ -545,10 +533,8 @@ generated](media/image15.png)
 
 -   Update the Body with the following commands
 ```python
-*for dn in ucm.get_directory_numbers():*
-
-*print(dn.pattern, dn.description,
-dn\[\'routePartitionName\'\]\[\'\_value_1\'\])*
+for dn in ucm.get_directory_numbers():
+print(dn.pattern, dn.description, dn['routePartitionName']['_value_1'])
 ```
 ![A screenshot of a computer Description automatically
 generated](media/image16.png)
@@ -790,7 +776,6 @@ with the real-time device API. This is the RIS70.
     the results but rather just show you that this is one of the many
     ways you can find this data.
 
-> And with that, you have completed the **Devwks-2019!** Now go forth and
-> show off your new skills!
->
-> ![Mario](media/image19.jpeg)
+And with that, you have completed the **Devwks-2019!** Now go forth and show off your new skills!
+
+![Mario](media/image19.jpeg)
