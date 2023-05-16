@@ -23,7 +23,7 @@ generated](media/image3.png)
 
 Let's get started.
 
-[Scenario 0 -- Prepare your environment.]{.underline}
+# Scenario 0 -- Prepare your environment
 
 *If you are doing this in your own lab, you'll need to create a user
 with AXL API access. We've already created this for you if everything
@@ -59,10 +59,7 @@ Step 3 - Create a new Application User (*axlapiuser/dCloud123!*)
 > saving the roles of the new Application User appear as in the
 > following screen:
 >
-> ![A screenshot of a computer Description automatically generated with
-> medium
-> confidence](media/image4.png){width="3.6826968503937008in"
-> height="5.385187007874015in"}
+> ![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
 
 [Scenario 1 -- UCM AXL Use Cases using Postman]{.underline}
 
@@ -84,12 +81,9 @@ user is working and AXL is up and running.
 
     -   If prompted, disable SSL verification.
 
-![A screenshot of a computer Description automatically generated with
-medium
-confidence](media/image5.png){width="3.911813210848644in"
-height="3.448150699912511in"}
+![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
 
-Congratulations! You have sent your first request to the AXL API!
+**Congratulations! You have sent your first request to the AXL API!**
 
 Now let's get our feet wet by doing some easy queries.
 
@@ -100,7 +94,7 @@ We are going to find a user and then see if they need a hard phone.
 -   Change your request from GET to POST.
 
 -   Add your first query (SOAP Envelope) to the Body
-'''xml
+```xml
 > **\<soapenv:Envelope
 > xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
 > xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>**
@@ -118,7 +112,7 @@ We are going to find a user and then see if they need a hard phone.
 > **\</soapenv:Body\>**
 >
 > **\</soapenv:Envelope\>**
-'''
+```
 -   Then hit Send to see who the user is.
 
 ![A screenshot of a computer Description automatically generated with
@@ -127,7 +121,7 @@ confidence](media/image6.png){width="6.091027996500437in"
 height="5.5215409011373575in"}
 
 -   **You should receive the following response.**
-'''xml
+```xml
 > ***\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>***
 >
 > ***\<soapenv:Envelope
@@ -386,14 +380,14 @@ height="5.5215409011373575in"}
 > ***\</soapenv:Body\>***
 >
 > ***\</soapenv:Envelope\>***
-'''
+```
 -   **You've found a lot of information. Now let's filter it down to
     just the associated devices and see if he's got a phone**
 
     -   **Duplicate the tab and replace the body with the
         \<returnedTags\> element and the \<associatedDevices\> section
         added. The % is used as a wild card.**
-'''xml
+```xml
 > **\<soapenv:Envelope
 > xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
 > xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>**
@@ -421,16 +415,13 @@ height="5.5215409011373575in"}
 > **\</soapenv:Body\>**
 >
 > **\</soapenv:Envelope\>**
-'''
+```
 -   **Hit Send and it should look like this:**
 
-> ![A screenshot of a computer Description automatically generated with
-> medium
-> confidence](media/image7.png){width="6.396420603674541in"
-> height="8.591186570428697in"}
+> ![A screenshot of a computer Description automatically generated with medium confidence](media/image7.png)
 
 -   **You should receive the following XML response:**
-'''xml
+```xml
 > ***\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>***
 >
 > ***\<soapenv:Envelope
@@ -460,8 +451,9 @@ height="5.5215409011373575in"}
 > ***\</soapenv:Body\>***
 >
 > ***\</soapenv:Envelope\>***
-'''
-[Section 1.A Postman Collections]{.underline}
+```
+
+# Section 1.A Postman Collections
 
 Postman community members have created collections to help you
 streamline your experience and not have to read through API documents to
@@ -479,10 +471,7 @@ we'll add a phone.
 -   Now we need to import the collection. In the top left of your
     Postman window, click on the Collections Icon
 
-![A screenshot of a computer screen Description automatically generated
-with low
-confidence](media/image8.png){width="4.584951881014873in"
-height="4.4913812335958in"}
+![A screenshot of a computer screen Description automatically generated with low confidence](media/image8.png)
 
 -   Select the collection and import using the wizard.
 
@@ -490,21 +479,16 @@ height="4.4913812335958in"}
     cookie. Notice the use of variables. We'll need to create variables
     to use this collection or hard code the answers.
 
-![A screenshot of a computer Description automatically generated with
-medium
-confidence](media/image9.png){width="9.002767935258094in"
-height="4.821785870516186in"}
+![A screenshot of a computer Description automatically generated with medium confidence](media/image9.png)
 
 -   We add environment variables by clicking on the top right icon to
     expand the environment variables window and then add a variable
 
 ![A screenshot of a computer Description automatically generated with
-low
-confidence](media/image10.png){width="8.920468066491688in"
-height="5.69310476815398in"}
+low confidence](media/image10.png)
 
 -   Name your collection and then add the following variables:
-'''python
+```python
     -   cucm = cucm1.dcloud.cisco.com
 
     -   username = axlapiuser
@@ -512,7 +496,7 @@ height="5.69310476815398in"}
     -   password = dCloud123!
 
     -   schema_ver = 12.5
-'''
+```
 -   Save your environment variables and change the environment to your
     new Environment.
 
@@ -523,7 +507,7 @@ height="3.1656496062992128in"}
 
 -   Now go back to the Test connectivity tab and hit Send. You should
     get back XML as follows:
-'''xml
+```xml
 *\<html\>*
 
 *\<head\>*
@@ -543,7 +527,7 @@ height="3.1656496062992128in"}
 *\</body\>*
 
 *\</html\>*
-'''
+```
 -   If you receive a 400 error message, go back to your environment
     variables and ensure that they are typed in correctly.
 
@@ -554,13 +538,10 @@ Now you are ready to add a phone for Mr Lee.
 -   In the collection window, choose "Add new phone with new line".
     Select the Body window to set the variables for the new phone.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium
-> confidence](media/image12.png){width="8.927008967629046in"
-> height="5.782941819772528in"}
+> ![A screenshot of a computer Description automatically generated with medium confidence](media/image12.png)
 
 -   Replace the body content with the following and hit Send:
-'''xml
+```xml
 > *\<soapenv:Envelope
 > xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
 > xmlns:ns=\"http://www.cisco.com/AXL/API/{{schema_ver}}\"\>*
@@ -628,10 +609,10 @@ Now you are ready to add a phone for Mr Lee.
 > *\</soapenv:Body\>*
 >
 > *\</soapenv:Envelope\>*
-'''
+```
 -   You should receive the following XML response though the return ID
     will most likely be different:
-'''xml
+```xml
 *\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>*
 
 *\<soapenv:Envelope
@@ -648,14 +629,14 @@ xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\>*
 *\</soapenv:Body\>*
 
 *\</soapenv:Envelope\>*
-'''
+```
 BONUS: With the tools you have at your fingertips, can you verify that
 the phone was created?
 
 Congratulations! Now you can go forward and be dangerous! (Or just
 progress to the next scenario).
 
-[Scenario 2 Python and AXL]{.underline}
+# Scenario 2 Python and AXL
 
 This scenario will help you explore the pypi python library and other
 libraries that will help simplify the process. Pypi AXL is one of many
@@ -676,21 +657,20 @@ with Python where the pypi library is limited.
 
 -   Open file in this directory called hello.py
 
-    -   Verify that this is in the file: print(\'hello world\')
+    -   Verify that this is in the file: `print(\'hello world\')`
 
     -   Save the file
 
--   In the terminalwindow type **py .\\hello.py** and press enter.
+-   In the terminalwindow type `py .\\hello.py` and press enter.
 
 -   If everything was installed correctly, you should see "hello world"
     back from your python script:
 
 ![A screenshot of a computer Description automatically
-generated](media/image13.png){width="3.5694444444444446in"
-height="3.75in"}
+generated](media/image13.png)
 
 -   Now let's install the Pypi AXL SDK library. In the terminal window
-    type **'pip install ciscoaxl'** and press enter.
+    type `pip install ciscoaxl` and press enter.
 
     -   If the libraries have already been installed, you'll be notified
         that the requirements were already satisfied.
@@ -708,7 +688,7 @@ utilize the SDK.
 -   The foundation portion of this script will be to import the ciscoaxl
     library and to connect to the UCM environment. In your Powershell
     ISE, open the file (ucm.py) and verify this section:
-
+```python
 > *from ciscoaxl import axl*
 >
 > * *
@@ -723,7 +703,7 @@ utilize the SDK.
 >
 > *ucm =
 > axl(username=username,password=password,cucm=cucm,cucm_version=version)*
->
+```
 > \*\*\*\*This should look familiar as it's the same info we created in
 > our environment variables in Postman. This isn't the recommended way
 > to store authorization credentials, but we are learning so we can do
@@ -731,36 +711,34 @@ utilize the SDK.
 
 -   Now let's query to see if we can find the phone we created in
     Postman. Add the following to your script:
-
+```python
 *for phone in ucm.get_phones():*
 
 *print(phone.name)*
-
+```
 -   Save the file and run '**py .\\ucm.py'** in the terminal window.
 
 -   You should see a list of phones including the one you created
     (SEPA4A4A4A4A4A4)
 
-> ![A screenshot of a computer Description automatically
-> generated](media/image14.png){width="5.692191601049869in"
-> height="5.170928477690289in"}
+> ![A screenshot of a computer Description automatically generated](media/image14.png)
 
 -   Let's see if we can get more information about these phones that you
     may need to utililze for reporting/tracking assets. Update your
     script body with the following commands:
-
+```python
 *phoneslist = ucm.get_phones()*
 
 *for phones in phoneslist:*
 
 *print (phones)*
-
+```
 -   This will give us all the data for all the phones. That may not be
     useful for you. Let's pair it down to get the description, name,
     location name and phone type.
 
 -   Update your print statement to return only those items:
-
+```python
 > *phoneslist = ucm.get_phones()*
 >
 > * *
@@ -769,13 +747,12 @@ utilize the SDK.
 >
 > *print (phones.description, phones.name,
 > phones\[\'locationName\'\]\[\'\_value_1\'\], phones.product)*
-
+```
 -   Your results should look like this after you save the file and run
     it:
 
 ![A screenshot of a computer Description automatically
-generated](media/image15.png){width="6.795027340332458in"
-height="4.986881014873141in"}
+generated](media/image15.png)
 
 -   You can export this data in python by changing "print" to the
     corresponding export command.
@@ -788,15 +765,14 @@ height="4.986881014873141in"}
     route partition assigned.
 
 -   Update the Body with the following commands
-
+```python
 *for dn in ucm.get_directory_numbers():*
 
 *print(dn.pattern, dn.description,
 dn\[\'routePartitionName\'\]\[\'\_value_1\'\])*
-
+```
 ![A screenshot of a computer Description automatically
-generated](media/image16.png){width="6.894756124234471in"
-height="7.196792432195975in"}
+generated](media/image16.png)
 
 **Route Group Manipulation and the deep end of the pool**
 
@@ -806,15 +782,15 @@ change the order of a members of a route group. Let's start by looking
 at a new route group.
 
 -   Get the route group:
-
+```python
 > *rg = ucm.get_route_group(name=\'new\')*
 >
 > *print(rg)*
-
+```
 -   If this group doesn't exist, you can either add it via the GUI or
     add it via "new" with the members ST_UCM_EMEA, TRUNK_TO_CUBE-US, and
     IMP-SIP-Trunk
-
+```python
 > *ucm.add_route_group(*
 >
 > *name=\'new\',*
@@ -824,9 +800,9 @@ at a new route group.
 > *members=\[(\'ST_UCM_EMEA\'),(\'TRUNK_TO_CUBE-US\'),(\'IMP-SIP-Trunk\')\]*
 >
 > *)*
-
+```
 -   You should see the following output:
-
+```python
 *{*
 
 *\'dialPlanWizardGenld\': None,*
@@ -906,12 +882,12 @@ at a new route group.
 ***\'uuid\': \'{6FE6E2AB-3298-B26C-DB90-BE55B0AD5DFF}\'***
 
 ***}***
-
+```
 -   The order is TRUNK_TO_CUBE-US, IMP-SIP-Trunk, and ST_UCM_EMEA. Your
     goal is to switch the US and AMEA members. We will be utilizing a
     dictionary to reorder the list. The deviceSelectionOrder variable
     will swap locations in the list. Here's the script:
-
+```python
 *rg = ucm.get_route_group(name=\'new\')*
 
 *print(rg)*
@@ -951,10 +927,10 @@ rg\[\'members\'\]\[\'member\'\]\[x\]\[\'deviceSelectionOrder\'\]*
 *rgnew = ucm.get_route_group(name=\'new\')*
 
 *print(rgnew)*
-
+```
 -   Save the file and run it. You should be able to run it multiple
     times if you want to swap it back and forth. Here's the output:
-
+```python
 *{*
 
 *\'dialPlanWizardGenld\': None,*
@@ -1114,10 +1090,10 @@ rg\[\'members\'\]\[\'member\'\]\[x\]\[\'deviceSelectionOrder\'\]*
 *\'uuid\': \'{315C15AC-F5C5-C5F6-0169-E252086A9EE9}\'*
 
 *}*
+```
+**Congratulations! You've now switched orders of a Route Group.**
 
-Congratulations! You've now switched orders of a Route Group.
-
-**Section 3 Zeep AXL, RIS70, and other APIs available in UCM.**
+# Section 3 Zeep AXL, RIS70, and other APIs available in UCM.
 
 Zeep is a Python SOAP client. We've loaded the and other requirements
 prior to this to help you. You will want to use tools like Zeep when you
@@ -1129,10 +1105,7 @@ DNs with the pattern, description and route partition assigned.
 
 -   Open the ucm-zeep.py file and notice the info included.
 
-![A screenshot of a computer program Description automatically generated
-with medium
-confidence](media/image17.png){width="6.887269247594051in"
-height="8.092975721784777in"}
+![A screenshot of a computer program Description automatically generated with medium confidence](media/image17.png)
 
 -   The request is a little different, but if you are comfortable with
     it, you can do much more with a raw client than being limited to
@@ -1167,10 +1140,7 @@ with the real-time device API. This is the RIS70.
 
 -   Open jabber-ris.py and let's review some pieces:
 
-![A picture containing text, screenshot, document, receipt Description
-automatically
-generated](media/image18.png){width="10.166666666666666in"
-height="6.194444444444445in"}
+![A picture containing text, screenshot, document, receipt Description automatically generated](media/image18.png)
 
 -   Model 503 = Jabber CSF.
 
@@ -1182,9 +1152,7 @@ height="6.194444444444445in"}
     the results but rather just show you that this is one of the many
     ways you can find this data.
 
-> And with that, you have completed the Devwks-2019! Now go forth and
+> And with that, you have completed the **Devwks-2019!** Now go forth and
 > show off your new skills!
 >
-> ![\@TheGreatGQ\'s video
-> Tweet](media/image19.jpeg){width="2.8513888888888888in"
-> height="1.6381944444444445in"}
+> ![Mario](media/image19.jpeg)
