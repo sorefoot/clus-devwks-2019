@@ -95,23 +95,14 @@ We are going to find a user and then see if they need a hard phone.
 
 -   Add your first query (SOAP Envelope) to the Body
 ```xml
-> **\<soapenv:Envelope
-> xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
-> xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>**
->
-> **\<soapenv:Header/\>**
->
-> **\<soapenv:Body\>**
->
-> **\<ns:getUser\>**
->
-> **\<userid\>jli\</userid\>**
->
-> **\</ns:getUser\>**
->
-> **\</soapenv:Body\>**
->
-> **\</soapenv:Envelope\>**
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+    <soapenv:Header/>
+        <soapenv:Body>
+            <ns:getUser>
+                <userid>jli</userid>
+                </ns:getUser>
+            </soapenv:Body>
+</soapenv:Envelope>
 ```
 -   Then hit Send to see who the user is.
 
@@ -122,26 +113,19 @@ height="5.5215409011373575in"}
 
 -   **You should receive the following response.**
 ```xml
-> ***\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>***
->
-> ***\<soapenv:Envelope
-> xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\>***
->
-> ***\<soapenv:Body\>***
->
-> ***\<ns:getUserResponse
-> xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>***
->
-> ***\<return\>***
->
-> ***\<user uuid=\"{45DB6EA0-94AD-EE9A-1C03-BB36DA065B27}\"\>***
->
-> ***\<firstName\>Jim\</firstName\>***
->
-> ***\<displayName\>Jim Li\</displayName\>***
->
-> ***\<middleName/\>***
->
+\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>
+\<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\>
+\<soapenv:Body\>
+\<ns:getUserResponse xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>\<return\>
+
+\<user uuid=\"{45DB6EA0-94AD-EE9A-1C03-BB36DA065B27}\"\>
+
+\<firstName\>Jim\</firstName\>
+
+\<displayName\>Jim Li\</displayName\>
+
+\<middleName/\>
+
 > ***\<lastName\>Li\</lastName\>***
 >
 > ***\<emMaxLoginTime /\>***
