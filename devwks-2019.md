@@ -106,10 +106,7 @@ We are going to find a user and then see if they need a hard phone.
 ```
 -   Then hit Send to see who the user is.
 
-![A screenshot of a computer Description automatically generated with
-medium
-confidence](media/image6.png){width="6.091027996500437in"
-height="5.5215409011373575in"}
+![A screenshot of a computer Description automatically generated with medium confidence](media/image6.png)
 
 -   **You should receive the following response.**
 ```xml
@@ -326,10 +323,7 @@ low confidence](media/image10.png)
 -   Save your environment variables and change the environment to your
     new Environment.
 
-![A screenshot of a computer Description automatically generated with
-medium
-confidence](media/image11.png){width="8.705534776902887in"
-height="3.1656496062992128in"}
+![A screenshot of a computer Description automatically generated with medium confidence](media/image11.png)
 
 -   Now go back to the Test connectivity tab and hit Send. You should
     get back XML as follows:
