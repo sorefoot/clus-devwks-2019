@@ -22,7 +22,7 @@ automatically
 generated](media/image3.png)
 
 Let's get started.
-
+___
 # Scenario 0 -- Prepare your environment
 
 *If you are doing this in your own lab, you'll need to create a user
@@ -60,8 +60,8 @@ Step 3 - Create a new Application User (*axlapiuser/dCloud123!*)
 > following screen:
 >
 > ![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
-
-[Scenario 1 -- UCM AXL Use Cases using Postman]{.underline}
+___
+# Scenario 1 -- UCM AXL Use Cases using Postman
 
 We'll Start by connecting Postman to our UCM server to ensure that your
 user is working and AXL is up and running.
@@ -100,8 +100,8 @@ We are going to find a user and then see if they need a hard phone.
         <soapenv:Body>
             <ns:getUser>
                 <userid>jli</userid>
-                </ns:getUser>
-            </soapenv:Body>
+            </ns:getUser>
+        </soapenv:Body>
 </soapenv:Envelope>
 ```
 -   Then hit Send to see who the user is.
@@ -113,257 +113,128 @@ height="5.5215409011373575in"}
 
 -   **You should receive the following response.**
 ```xml
-\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>
-\<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\>
-\<soapenv:Body\>
-\<ns:getUserResponse xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>\<return\>
-
-\<user uuid=\"{45DB6EA0-94AD-EE9A-1C03-BB36DA065B27}\"\>
-
-\<firstName\>Jim\</firstName\>
-
-\<displayName\>Jim Li\</displayName\>
-
-\<middleName/\>
-
-> ***\<lastName\>Li\</lastName\>***
->
-> ***\<emMaxLoginTime /\>***
->
-> ***\<userid\>jli\</userid\>***
->
-> ***\<password/\>***
->
-> ***\<pin/\>***
->
-> ***\<mailid\>jli@dcloud.cisco.com\</mailid\>***
->
-> ***\<department\>Sales\</department\>***
->
-> ***\<manager\>tbard\</manager\>***
->
-> ***\<userLocale /\>***
->
-> ***\<associatedDevices\>***
->
-> ***\<device\>CSFJLI\</device\>***
->
-> ***\</associatedDevices\>***
->
-> ***\<primaryExtension\>***
->
-> ***\<pattern\>\\+14085554019\</pattern\>***
->
-> ***\<routePartitionName\>DN\</routePartitionName\>***
->
-> ***\</primaryExtension\>***
->
-> ***\<associatedPc/\>***
->
-> ***\<associatedGroups\>***
->
-> ***\<userGroup\>***
->
-> ***\<name\>Standard CCM End Users\</name\>***
->
-> ***\<userRoles\>***
->
-> ***\<userRole\>Standard CCM End Users\</userRole\>***
->
-> ***\<userRole\>Standard CCMUSER Administration\</userRole\>***
->
-> ***\</userRoles\>***
->
-> ***\</userGroup\>***
->
-> ***\<userGroup\>***
->
-> ***\<name\>Standard CTI Enabled\</name\>***
->
-> ***\<userRoles\>***
->
-> ***\<userRole\>Standard CTI Enabled\</userRole\>***
->
-> ***\</userRoles\>***
->
-> ***\</userGroup\>***
->
-> ***\</associatedGroups\>***
->
-> ***\<enableCti\>true\</enableCti\>***
->
-> ***\<digestCredentials/\>***
->
-> ***\<phoneProfiles/\>***
->
-> ***\<defaultProfile/\>***
->
-> ***\<presenceGroupName
-> uuid=\"{AD243D17-98B4-4118-8FEB-5FF2E1B781AC}\"\>Standard Presence
-> group\</presenceGroupName\>***
->
-> ***\<subscribeCallingSearchSpaceName/\>***
->
-> ***\<enableMobility\>false\</enableMobility\>***
->
-> ***\<enableMobileVoiceAccess\>false\</enableMobileVoiceAccess\>***
->
-> ***\<maxDeskPickupWaitTime\>10000\</maxDeskPickupWaitTime\>***
->
-> ***\<remoteDestinationLimit\>4\</remoteDestinationLimit\>***
->
-> ***\<associatedRemoteDestinationProfiles/\>***
->
-> ***\<passwordCredentials\>***
->
-> ***\<pwdCredPolicyName\>Default Credential
-> Policy\</pwdCredPolicyName\>***
->
-> ***\<pwdCredUserCantChange\>false\</pwdCredUserCantChange\>***
->
-> ***\<pwdCredUserMustChange\>false\</pwdCredUserMustChange\>***
->
-> ***\<pwdCredDoesNotExpire\>true\</pwdCredDoesNotExpire\>***
->
-> ***\<pwdCredTimeChanged\>February 28, 2020 16:05:58
-> PST\</pwdCredTimeChanged\>***
->
-> ***\<pwdCredTimeAdminLockout/\>***
->
-> ***\<pwdCredLockedByAdministrator\>false\</pwdCredLockedByAdministrator\>***
->
-> ***\</passwordCredentials\>***
->
-> ***\<pinCredentials\>***
->
-> ***\<pinCredPolicyName\>Default Credential
-> Policy\</pinCredPolicyName\>***
->
-> ***\<pinCredUserCantChange\>true\</pinCredUserCantChange\>***
->
-> ***\<pinCredUserMustChange\>false\</pinCredUserMustChange\>***
->
-> ***\<pinCredDoesNotExpire\>true\</pinCredDoesNotExpire\>***
->
-> ***\<pinCredTimeChanged\>February 28, 2020 16:05:58
-> PST\</pinCredTimeChanged\>***
->
-> ***\<pinCredTimeAdminLockout/\>***
->
-> ***\<pinCredLockedByAdministrator\>false\</pinCredLockedByAdministrator\>***
->
-> ***\</pinCredentials\>***
->
-> ***\<associatedTodAccess/\>***
->
-> ***\<status\>1\</status\>***
->
-> ***\<enableEmcc\>false\</enableEmcc\>***
->
-> ***\<associatedCapfProfiles/\>***
->
-> ***\<ctiControlledDeviceProfiles/\>***
->
-> ***\<patternPrecedence /\>***
->
-> ***\<numericUserId /\>***
->
-> ***\<mlppPassword /\>***
->
-> ***\<customUserFields/\>***
->
-> ***\<homeCluster\>true\</homeCluster\>***
->
-> ***\<imAndPresenceEnable\>true\</imAndPresenceEnable\>***
->
-> ***\<serviceProfile
-> uuid=\"{5F671E84-E2BA-541C-3B06-6D661644432E}\"\>UC Service
-> Profile\</serviceProfile\>***
->
-> ***\<lineAppearanceAssociationForPresences\>***
->
-> ***\<lineAppearanceAssociationForPresence
-> uuid=\"{3F57EC12-A061-5010-D28C-DB7F3BD55A56}\"\>***
->
-> ***\<laapAssociate\>t\</laapAssociate\>***
->
-> ***\<laapProductType\>Cisco Unified Client Services
-> Framework\</laapProductType\>***
->
-> ***\<laapDeviceName\>CSFJLI\</laapDeviceName\>***
->
-> ***\<laapDirectory\>\\+14085554019\</laapDirectory\>***
->
-> ***\<laapPartition\>DN\</laapPartition\>***
->
-> ***\<laapDescription\>Jim Li jli +14085554019\</laapDescription\>***
->
-> ***\</lineAppearanceAssociationForPresence\>***
->
-> ***\</lineAppearanceAssociationForPresences\>***
->
-> ***\<directoryUri\>jli@dcloud.cisco.com\</directoryUri\>***
->
-> ***\<telephoneNumber\>+14085554019\</telephoneNumber\>***
->
-> ***\<title\>Sales Engineer\</title\>***
->
-> ***\<mobileNumber/\>***
->
-> ***\<homeNumber/\>***
->
-> ***\<pagerNumber/\>***
->
-> ***\<extensionsInfo\>***
->
-> ***\<extension uuid=\"{F134A455-3B3B-4A88-B0A4-8EFCD28C5EB5}\"\>***
->
-> ***\<sortOrder /\>***
->
-> ***\<pattern
-> uuid=\"{EB8F7731-8372-F8A5-9F6A-948602B650FC}\"\>\\+14085554019\</pattern\>***
->
-> ***\<routePartition\>DN\</routePartition\>***
->
-> ***\</extension\>***
->
-> ***\</extensionsInfo\>***
->
-> ***\<selfService\>19725554019\</selfService\>***
->
-> ***\<userProfile/\>***
->
-> ***\<calendarPresence\>false\</calendarPresence\>***
->
-> ***\<ldapDirectoryName
-> uuid=\"{2D2FC3FF-96BF-9DAF-CE33-ECE87D7E30FA}\"\>Local\</ldapDirectoryName\>***
->
-> ***\<userIdentity\>jli@dcloud.cisco.com\</userIdentity\>***
->
-> ***\<nameDialing/\>***
->
-> ***\<ipccExtension/\>***
->
-> ***\<ipccRoutePartition/\>***
->
-> ***\<convertUserAccount
-> uuid=\"{2D2FC3FF-96BF-9DAF-CE33-ECE87D7E30FA}\"\>Local\</convertUserAccount\>***
->
-> ***\<enableUserToHostConferenceNow\>false\</enableUserToHostConferenceNow\>***
->
-> ***\<attendeesAccessCode/\>***
->
-> ***\<customerName/\>***
->
-> ***\</user\>***
->
-> ***\</return\>***
->
-> ***\</ns:getUserResponse\>***
->
-> ***\</soapenv:Body\>***
->
-> ***\</soapenv:Envelope\>***
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns:getUserResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+            <return>
+                <user uuid="{45DB6EA0-94AD-EE9A-1C03-BB36DA065B27}">
+                    <firstName>Jim</firstName>
+                    <displayName>Jim Li</displayName>
+                    <middleName/>
+                    <lastName>Li</lastName>
+                    <emMaxLoginTime />
+                    <userid>jli</userid>
+                    <password/>
+                    <pin/>
+                    <mailid>jli@dcloud.cisco.com</mailid>
+                    <department>Sales</department>
+                    <manager>tbard</manager>
+                    <userLocale />
+                    <associatedDevices>
+                        <device>CSFJLI</device>
+                    </associatedDevices>
+                    <primaryExtension>
+                        <pattern>\+14085554019</pattern>
+                        <routePartitionName>DN</routePartitionName>
+                    </primaryExtension>
+                    <associatedPc/>
+                    <associatedGroups>
+                        <userGroup>
+                            <name>Standard CCM End Users</name>
+                            <userRoles>
+                                <userRole>Standard CCM End Users</userRole>
+                                <userRole>Standard CCMUSER Administration</userRole>
+                            </userRoles>
+                        </userGroup>
+                        <userGroup>
+                            <name>Standard CTI Enabled</name>
+                            <userRoles>
+                                <userRole>Standard CTI Enabled</userRole>
+                            </userRoles>
+                        </userGroup>
+                    </associatedGroups>
+                    <enableCti>true</enableCti>
+                    <digestCredentials/>
+                    <phoneProfiles/>
+                    <defaultProfile/>
+                    <presenceGroupName uuid="{AD243D17-98B4-4118-8FEB-5FF2E1B781AC}">Standard Presence group</presenceGroupName>
+                    <subscribeCallingSearchSpaceName/>
+                    <enableMobility>false</enableMobility>
+                    <enableMobileVoiceAccess>false</enableMobileVoiceAccess>
+                    <maxDeskPickupWaitTime>10000</maxDeskPickupWaitTime>
+                    <remoteDestinationLimit>4</remoteDestinationLimit>
+                    <associatedRemoteDestinationProfiles/>
+                    <passwordCredentials>
+                        <pwdCredPolicyName>Default Credential Policy</pwdCredPolicyName>
+                        <pwdCredUserCantChange>false</pwdCredUserCantChange>
+                        <pwdCredUserMustChange>false</pwdCredUserMustChange>
+                        <pwdCredDoesNotExpire>true</pwdCredDoesNotExpire>
+                        <pwdCredTimeChanged>February 28, 2020 16:05:58 PST</pwdCredTimeChanged>
+                        <pwdCredTimeAdminLockout/>
+                        <pwdCredLockedByAdministrator>false</pwdCredLockedByAdministrator>
+                    </passwordCredentials>
+                    <pinCredentials>
+                        <pinCredPolicyName>Default Credential Policy</pinCredPolicyName>
+                        <pinCredUserCantChange>true</pinCredUserCantChange>
+                        <pinCredUserMustChange>false</pinCredUserMustChange>
+                        <pinCredDoesNotExpire>true</pinCredDoesNotExpire>
+                        <pinCredTimeChanged>February 28, 2020 16:05:58 PST</pinCredTimeChanged>
+                        <pinCredTimeAdminLockout/>
+                        <pinCredLockedByAdministrator>false</pinCredLockedByAdministrator>
+                    </pinCredentials>
+                    <associatedTodAccess/>
+                    <status>1</status>
+                    <enableEmcc>false</enableEmcc>
+                    <associatedCapfProfiles/>
+                    <ctiControlledDeviceProfiles/>
+                    <patternPrecedence />
+                    <numericUserId />
+                    <mlppPassword />
+                    <customUserFields/>
+                    <homeCluster>true</homeCluster>
+                    <imAndPresenceEnable>true</imAndPresenceEnable>
+                    <serviceProfile uuid="{5F671E84-E2BA-541C-3B06-6D661644432E}">UC Service Profile</serviceProfile>
+                    <lineAppearanceAssociationForPresences>
+                        <lineAppearanceAssociationForPresence uuid="{3F57EC12-A061-5010-D28C-DB7F3BD55A56}">
+                            <laapAssociate>t</laapAssociate>
+                            <laapProductType>Cisco Unified Client Services Framework</laapProductType>
+                            <laapDeviceName>CSFJLI</laapDeviceName>
+                            <laapDirectory>\+14085554019</laapDirectory>
+                            <laapPartition>DN</laapPartition>
+                            <laapDescription>Jim Li jli +14085554019</laapDescription>
+                        </lineAppearanceAssociationForPresence>
+                    </lineAppearanceAssociationForPresences>
+                    <directoryUri>jli@dcloud.cisco.com</directoryUri>
+                    <telephoneNumber>+14085554019</telephoneNumber>
+                    <title>Sales Engineer</title>
+                    <mobileNumber/>
+                    <homeNumber/>
+                    <pagerNumber/>
+                    <extensionsInfo>
+                        <extension uuid="{F134A455-3B3B-4A88-B0A4-8EFCD28C5EB5}">
+                            <sortOrder />
+                            <pattern uuid="{EB8F7731-8372-F8A5-9F6A-948602B650FC}">\+14085554019</pattern>
+                            <routePartition>DN</routePartition>
+                        </extension>
+                    </extensionsInfo>
+                    <selfService>19725554019</selfService>
+                    <userProfile/>
+                    <calendarPresence>false</calendarPresence>
+                    <ldapDirectoryName uuid="{2D2FC3FF-96BF-9DAF-CE33-ECE87D7E30FA}">Local</ldapDirectoryName>
+                    <userIdentity>jli@dcloud.cisco.com</userIdentity>
+                    <nameDialing/>
+                    <ipccExtension/>
+                    <ipccRoutePartition/>
+                    <convertUserAccount uuid="{2D2FC3FF-96BF-9DAF-CE33-ECE87D7E30FA}">Local</convertUserAccount>
+                    <enableUserToHostConferenceNow>false</enableUserToHostConferenceNow>
+                    <attendeesAccessCode/>
+                    <customerName/>
+                </user>
+            </return>
+        </ns:getUserResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
 ```
 -   **You've found a lot of information. Now let's filter it down to
     just the associated devices and see if he's got a phone**
@@ -372,33 +243,19 @@ height="5.5215409011373575in"}
         \<returnedTags\> element and the \<associatedDevices\> section
         added. The % is used as a wild card.**
 ```xml
-> **\<soapenv:Envelope
-> xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
-> xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>**
->
-> **\<soapenv:Header/\>**
->
-> **\<soapenv:Body\>**
->
-> **\<ns:getUser\>**
->
-> **\<userid\>jli\</userid\>**
->
-> **\<returnedTags\>**
->
-> **\<associatedDevices\>**
->
-> **\<device\>%\</device\>**
->
-> **\</associatedDevices\>**
->
-> **\</returnedTags\>**
->
-> **\</ns:getUser\>**
->
-> **\</soapenv:Body\>**
->
-> **\</soapenv:Envelope\>**
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+                <soapenv:Header/>
+                <soapenv:Body>
+                    <ns:getUser>
+                        <userid>jli</userid>
+                        <returnedTags>
+                            <associatedDevices>
+                                <device>%</device>
+                            </associatedDevices>
+                        </returnedTags>
+                    </ns:getUser>
+                </soapenv:Body>
+   </soapenv:Envelope>
 ```
 -   **Hit Send and it should look like this:**
 
@@ -406,37 +263,22 @@ height="5.5215409011373575in"}
 
 -   **You should receive the following XML response:**
 ```xml
-> ***\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>***
->
-> ***\<soapenv:Envelope
-> xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\>***
->
-> ***\<soapenv:Body\>***
->
-> ***\<ns:getUserResponse
-> xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>***
->
-> ***\<return\>***
->
-> ***\<user uuid=\"{45DB6EA0-94AD-EE9A-1C03-BB36DA065B27}\"\>***
->
-> ***\<associatedDevices\>***
->
-> ***\<device\>CSFJLI\</device\>***
->
-> ***\</associatedDevices\>***
->
-> ***\</user\>***
->
-> ***\</return\>***
->
-> ***\</ns:getUserResponse\>***
->
-> ***\</soapenv:Body\>***
->
-> ***\</soapenv:Envelope\>***
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns:getUserResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+            <return>
+                <user uuid="{45DB6EA0-94AD-EE9A-1C03-BB36DA065B27}">
+                    <associatedDevices>
+                        <device>CSFJLI</device>
+                    </associatedDevices>
+                </user>
+            </return>
+        </ns:getUserResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
 ```
-
+___
 # Section 1.A Postman Collections
 
 Postman community members have created collections to help you
@@ -492,25 +334,19 @@ height="3.1656496062992128in"}
 -   Now go back to the Test connectivity tab and hit Send. You should
     get back XML as follows:
 ```xml
-*\<html\>*
+<html>
 
-*\<head\>*
+<head>
+	<title>Cisco CallManager: AXL Web Service</title>
+</head>
 
-*\<title\>Cisco CallManager: AXL Web Service\</title\>*
+<body>
+	<h1>Cisco CallManager: AXL Web Service</h1>
+	<p>The AXL Web Service is working and accepting requests.
+		Use HTTP POST to send a request.</p>
+</body>
 
-*\</head\>*
-
-*\<body\>*
-
-*\<h1\>Cisco CallManager: AXL Web Service\</h1\>*
-
-*\<p\>The AXL Web Service is working and accepting requests.*
-
-*Use HTTP POST to send a request.\</p\>*
-
-*\</body\>*
-
-*\</html\>*
+</html>
 ```
 -   If you receive a 400 error message, go back to your environment
     variables and ensure that they are typed in correctly.
@@ -526,100 +362,59 @@ Now you are ready to add a phone for Mr Lee.
 
 -   Replace the body content with the following and hit Send:
 ```xml
-> *\<soapenv:Envelope
-> xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
-> xmlns:ns=\"http://www.cisco.com/AXL/API/{{schema_ver}}\"\>*
->
-> *\<soapenv:Header/\>*
->
-> *\<soapenv:Body\>*
->
-> *\<ns:addPhone\>*
->
-> *\<phone\>*
->
-> *\<name\>SEPA4A4A4A4A4A4\</name\>*
->
-> *\<description\>8865 for Jim Lee\</description\>*
->
-> *\<product\>Cisco 8865\</product\>*
->
-> *\<model\>Cisco 8865\</model\>*
->
-> *\<class\>Phone\</class\>*
->
-> *\<protocol\>SIP\</protocol\>*
->
-> *\<protocolSide\>User\</protocolSide\>*
->
-> *\<devicePoolName\>Conferencing\</devicePoolName\>*
->
-> *\<commonPhoneConfigName\>Standard Common Phone
-> Profile\</commonPhoneConfigName\>*
->
-> *\<ownerUserName\>jli\</ownerUserName\>*
->
-> *\<securityProfileName\>Universal Device Template - Model-independent
-> Security Profile\</securityProfileName\>*
->
-> *\<sipProfileName\>Standard SIP Profile\</sipProfileName\>*
->
-> *\<lines\>*
->
-> *\<line\>*
->
-> *\<index\>1\</index\>*
->
-> *\<label\>Jim Li\</label\>*
->
-> *\<display\>Jim Li\</display\>*
->
-> *\<dirn\>*
->
-> *\<pattern\>\\+14085554019\</pattern\>*
->
-> *\<routePartitionName\>DN\</routePartitionName\>*
->
-> *\</dirn\>*
->
-> *\</line\>*
->
-> *\</lines\>*
->
-> *\</phone\>*
->
-> *\</ns:addPhone\>*
->
-> *\</soapenv:Body\>*
->
-> *\</soapenv:Envelope\>*
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.cisco.com/AXL/API/{{schema_ver}}">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:addPhone>
+            <phone>
+                <name>SEPA4A4A4A4A4A4</name>
+                 <description>8865 for Jim Lee</description>
+                <product>Cisco 8865</product>
+                <model>Cisco 8865</model>
+                <class>Phone</class>
+                <protocol>SIP</protocol>
+                <protocolSide>User</protocolSide>
+                <devicePoolName>Conferencing</devicePoolName>
+                <commonPhoneConfigName>Standard Common Phone Profile</commonPhoneConfigName>
+                <ownerUserName>jli</ownerUserName>
+                <securityProfileName>Universal Device Template - Model-independent Security Profile</securityProfileName>
+                <sipProfileName>Standard SIP Profile</sipProfileName>
+                <lines>
+                    <line>
+                        <index>1</index>
+                        <label>Jim Li</label>
+                        <display>Jim Li</display>
+                        <dirn>
+                            <pattern>\+14085554019</pattern>
+                           <routePartitionName>DN</routePartitionName>
+                        </dirn>
+                    </line>
+                </lines>
+            </phone>
+        </ns:addPhone>
+    </soapenv:Body>
+</soapenv:Envelope>
 ```
 -   You should receive the following XML response though the return ID
     will most likely be different:
 ```xml
-*\<?xml version=\'1.0\' encoding=\'UTF-8\'?\>*
-
-*\<soapenv:Envelope
-xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\>*
-
-*\<soapenv:Body\>*
-
-*\<ns:addPhoneResponse xmlns:ns=\"http://www.cisco.com/AXL/API/12.5\"\>*
-
-*\<return\>{589567D4-3477-1EA5-AD1E-C9C717BF6626}\</return\>*
-
-*\</ns:addPhoneResponse\>*
-
-*\</soapenv:Body\>*
-
-*\</soapenv:Envelope\>*
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns:addPhoneResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+            <return>{589567D4-3477-1EA5-AD1E-C9C717BF6626}</return>
+        </ns:addPhoneResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
 ```
-BONUS: With the tools you have at your fingertips, can you verify that
-the phone was created?
 
-Congratulations! Now you can go forward and be dangerous! (Or just
-progress to the next scenario).
+*BONUS: With the tools you have at your fingertips, can you verify that
+the phone was created?*
 
+**Congratulations! Now you can go forward and be dangerous! (Or just
+progress to the next scenario).**
+
+___
 # Scenario 2 Python and AXL
 
 This scenario will help you explore the pypi python library and other
@@ -703,7 +498,7 @@ utilize the SDK.
 -   Save the file and run '**py .\\ucm.py'** in the terminal window.
 
 -   You should see a list of phones including the one you created
-    (SEPA4A4A4A4A4A4)
+    `(SEPA4A4A4A4A4A4)`
 
 > ![A screenshot of a computer Description automatically generated](media/image14.png)
 
@@ -767,313 +562,172 @@ at a new route group.
 
 -   Get the route group:
 ```python
-> *rg = ucm.get_route_group(name=\'new\')*
->
-> *print(rg)*
+rg = ucm.get_route_group(name=\'new\')
+print(rg)
 ```
 -   If this group doesn't exist, you can either add it via the GUI or
     add it via "new" with the members ST_UCM_EMEA, TRUNK_TO_CUBE-US, and
     IMP-SIP-Trunk
 ```python
-> *ucm.add_route_group(*
->
-> *name=\'new\',*
->
-> *distribution_algorithm=\'Circular\',*
->
-> *members=\[(\'ST_UCM_EMEA\'),(\'TRUNK_TO_CUBE-US\'),(\'IMP-SIP-Trunk\')\]*
->
-> *)*
+ucm.add_route_group(
+    name='new',
+    distribution_algorithm='Circular',
+    members=[('ST_UCM_EMEA'),('TRUNK_TO_CUBE-US'),('IMP-SIP-Trunk')]
+)
 ```
 -   You should see the following output:
 ```python
-*{*
+{
+    'dialPlanWizardGenld': None,
+    'distributionAlgorithm': 'Circular',
+    'members': {
+        'member': [
+            {
+                'deviceSelectionOrder': 1,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'TRUNK_TO_CUBE_US',
+                    'uuid': '{CC32EB93-9BB4-074C-FFF2-5839D983FCAC}'
+                },
+                'port': 0,
+                'uuid': '{FC77DBBD-6F8C-7F94-5205-E732ECA58282}'
+            },
+            {
+                'deviceSelectionOrder': 2,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'IMP-SIP-Trunk',
+                    'uuid': '{9A6C5AAA-7F99-64B2-9BF7-1EE2F7148A21}'
+                },
+                'port': 0,
+                'uuid': '{87424137-A187-216D-2BE9-89922793210B}'
+            },
+            {
+                'deviceSelectionOrder': 3,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'ST_UCM_EMEA',
+                    'uuid': '{883480C4-2128-3169-9BC7-04897161908F}'
+                },
+                'port': 0,
+                'uuid': '{E7F903DB-0B57-A76D-6762-44C72321F8E5}'
+            }
+        ]
+    },
+    'name': 'new',
+    'uuid': '{6FE6E2AB-3298-B26C-DB90-BE55B0AD5DFF}'
+}
 
-*\'dialPlanWizardGenld\': None,*
-
-*\'distributionAlgorithm\': \'Circular\',*
-
-*\'members\': {*
-
-*\'member\': \[*
-
-*{*
-
-*\'deviceSelectionOrder\': 1,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'TRUNK_TO_CUBE_US\',*
-
-*\'uuid\': \'{CC32EB93-9BB4-074C-FFF2-5839D983FCAC}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{FC77DBBD-6F8C-7F94-5205-E732ECA58282}\'*
-
-*},*
-
-*{*
-
-*\'deviceSelectionOrder\': 2,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'IMP-SIP-Trunk\',*
-
-*\'uuid\': \'{9A6C5AAA-7F99-64B2-9BF7-1EE2F7148A21}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{87424137-A187-216D-2BE9-89922793210B}\'*
-
-*},*
-
-*{*
-
-*\'deviceSelectionOrder\': 3,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'ST_UCM_EMEA\',*
-
-*\'uuid\': \'{883480C4-2128-3169-9BC7-04897161908F}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{E7F903DB-0B57-A76D-6762-44C72321F8E5}\'*
-
-*}*
-
-*\]*
-
-*},*
-
-*\'name\': \'new\',*
-
-***\'uuid\': \'{6FE6E2AB-3298-B26C-DB90-BE55B0AD5DFF}\'***
-
-***}***
 ```
 -   The order is TRUNK_TO_CUBE-US, IMP-SIP-Trunk, and ST_UCM_EMEA. Your
     goal is to switch the US and AMEA members. We will be utilizing a
     dictionary to reorder the list. The deviceSelectionOrder variable
     will swap locations in the list. Here's the script:
 ```python
-*rg = ucm.get_route_group(name=\'new\')*
+rg = ucm.get_route_group(name='new')
+print(rg)
 
-*print(rg)*
+groupmap = { "EU" : { "index" : None, "order": None},
+             "US" : { "index" : None, "order": None}}
+for x in range(len(rg['members']['member'])):
+    if rg['members']['member'][x]['deviceName']['_value_1'] == 'ST_UCM_EMEA':
+        groupmap['EU']['order'] = rg['members']['member'][x]['deviceSelectionOrder']
+        groupmap['EU']['index'] = x
+    elif rg['members']['member'][x]['deviceName']['_value_1'] == 'TRUNK_TO_CUBE_US':
+        groupmap['US']['order'] = rg['members']['member'][x]['deviceSelectionOrder']
+        groupmap['US']['index'] = x
+rg['members']['member'][groupmap['US']['index']]['deviceSelectionOrder'] = groupmap['EU']['order']
+rg['members']['member'][groupmap['EU']['index']]['deviceSelectionOrder'] = groupmap['US']['order']
 
-*groupmap = { \"EU\" : { \"index\" : None, \"order\": None},*
+ucm.update_route_group(name='new',members=rg.members)
 
-*\"US\" : { \"index\" : None, \"order\": None}}*
-
-*for x in range(len(rg\[\'members\'\]\[\'member\'\])):*
-
-*if
-rg\[\'members\'\]\[\'member\'\]\[x\]\[\'deviceName\'\]\[\'\_value_1\'\]
-== \'ST_UCM_EMEA\':*
-
-*groupmap\[\'EU\'\]\[\'order\'\] =
-rg\[\'members\'\]\[\'member\'\]\[x\]\[\'deviceSelectionOrder\'\]*
-
-*groupmap\[\'EU\'\]\[\'index\'\] = x*
-
-*elif
-rg\[\'members\'\]\[\'member\'\]\[x\]\[\'deviceName\'\]\[\'\_value_1\'\]
-== \'TRUNK_TO_CUBE_US\':*
-
-*groupmap\[\'US\'\]\[\'order\'\] =
-rg\[\'members\'\]\[\'member\'\]\[x\]\[\'deviceSelectionOrder\'\]*
-
-*groupmap\[\'US\'\]\[\'index\'\] = x*
-
-*rg\[\'members\'\]\[\'member\'\]\[groupmap\[\'US\'\]\[\'index\'\]\]\[\'deviceSelectionOrder\'\]
-= groupmap\[\'EU\'\]\[\'order\'\]*
-
-*rg\[\'members\'\]\[\'member\'\]\[groupmap\[\'EU\'\]\[\'index\'\]\]\[\'deviceSelectionOrder\'\]
-= groupmap\[\'US\'\]\[\'order\'\]*
-
-*ucm.update_route_group(name=\'new\',members=rg.members)*
-
-*rgnew = ucm.get_route_group(name=\'new\')*
-
-*print(rgnew)*
+rgnew = ucm.get_route_group(name='new')
+print(rgnew)
 ```
 -   Save the file and run it. You should be able to run it multiple
     times if you want to swap it back and forth. Here's the output:
 ```python
-*{*
+{
+    'dialPlanWizardGenld': None,
+    'distributionAlgorithm': 'Circular',
+    'members': {
+        'member': [
+            {
+                'deviceSelectionOrder': 1,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'ST_UCM_EMEA',
+                    'uuid': '{883480C4-2128-3169-9BC7-04897161908F}'
+                },
+                'port': 0,
+                'uuid': '{BFA33B6C-B695-31CB-61D1-BBD8F64C06B2}'
+            },
+            {
+                'deviceSelectionOrder': 2,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'IMP-SIP-Trunk',
+                    'uuid': '{9A6C5AAA-7F99-64B2-9BF7-1EE2F7148A21}'
+                },
+                'port': 0,
+                'uuid': '{BB204302-03A5-EFC6-7D0C-A26E5A589B21}'
+            },
+            {
+                'deviceSelectionOrder': 3,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'TRUNK_TO_CUBE_US',
+                    'uuid': '{CC32EB93-9BB4-074C-FFF2-5839D983FCAC}'
+                },
+                'port': 0,
+                'uuid': '{BE362CDF-C9DB-DB6A-29E5-6CFD799C4458}'
+            }
+        ]
+    },
+    'name': 'new',
+    'uuid': '{315C15AC-F5C5-C5F6-0169-E252086A9EE9}'
+}
+{
+    'dialPlanWizardGenld': None,
+    'distributionAlgorithm': 'Circular',
+    'members': {
+        'member': [
+            {
+                'deviceSelectionOrder': 3,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'ST_UCM_EMEA',
+                    'uuid': '{883480C4-2128-3169-9BC7-04897161908F}'
+                },
+                'port': 0,
+                'uuid': '{79C81AB8-61F5-42A9-9408-2F6A12870F7C}'
+            },
+            {
+                'deviceSelectionOrder': 2,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'IMP-SIP-Trunk',
+                    'uuid': '{9A6C5AAA-7F99-64B2-9BF7-1EE2F7148A21}'
+                },
+                'port': 0,
+                'uuid': '{B3B5A3D0-AA80-1A54-D9A2-E3524CAACFCF}'
+            },
+            {
+                'deviceSelectionOrder': 1,
+                'dialPlanWizardGenId': None,
+                'deviceName': {
+                    '_value_1': 'TRUNK_TO_CUBE_US',
+                    'uuid': '{CC32EB93-9BB4-074C-FFF2-5839D983FCAC}'
+                },
+                'port': 0,
+                'uuid': '{DD8227AE-F924-30A2-20C4-C285C900FCF6}'
+            }
+        ]
+    },
+    'name': 'new',
+    'uuid': '{315C15AC-F5C5-C5F6-0169-E252086A9EE9}'
+}
 
-*\'dialPlanWizardGenld\': None,*
-
-*\'distributionAlgorithm\': \'Circular\',*
-
-*\'members\': {*
-
-*\'member\': \[*
-
-*{*
-
-*\'deviceSelectionOrder\': 1,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'ST_UCM_EMEA\',*
-
-*\'uuid\': \'{883480C4-2128-3169-9BC7-04897161908F}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{BFA33B6C-B695-31CB-61D1-BBD8F64C06B2}\'*
-
-*},*
-
-*{*
-
-*\'deviceSelectionOrder\': 2,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'IMP-SIP-Trunk\',*
-
-*\'uuid\': \'{9A6C5AAA-7F99-64B2-9BF7-1EE2F7148A21}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{BB204302-03A5-EFC6-7D0C-A26E5A589B21}\'*
-
-*},*
-
-*{*
-
-*\'deviceSelectionOrder\': 3,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'TRUNK_TO_CUBE_US\',*
-
-*\'uuid\': \'{CC32EB93-9BB4-074C-FFF2-5839D983FCAC}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{BE362CDF-C9DB-DB6A-29E5-6CFD799C4458}\'*
-
-*}*
-
-*\]*
-
-*},*
-
-*\'name\': \'new\',*
-
-*\'uuid\': \'{315C15AC-F5C5-C5F6-0169-E252086A9EE9}\'*
-
-*}*
-
-*{*
-
-*\'dialPlanWizardGenld\': None,*
-
-*\'distributionAlgorithm\': \'Circular\',*
-
-*\'members\': {*
-
-*\'member\': \[*
-
-*{*
-
-*\'deviceSelectionOrder\': 3,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'ST_UCM_EMEA\',*
-
-*\'uuid\': \'{883480C4-2128-3169-9BC7-04897161908F}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{79C81AB8-61F5-42A9-9408-2F6A12870F7C}\'*
-
-*},*
-
-*{*
-
-*\'deviceSelectionOrder\': 2,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'IMP-SIP-Trunk\',*
-
-*\'uuid\': \'{9A6C5AAA-7F99-64B2-9BF7-1EE2F7148A21}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{B3B5A3D0-AA80-1A54-D9A2-E3524CAACFCF}\'*
-
-*},*
-
-*{*
-
-*\'deviceSelectionOrder\': 1,*
-
-*\'dialPlanWizardGenId\': None,*
-
-*\'deviceName\': {*
-
-*\'\_value_1\': \'TRUNK_TO_CUBE_US\',*
-
-*\'uuid\': \'{CC32EB93-9BB4-074C-FFF2-5839D983FCAC}\'*
-
-*},*
-
-*\'port\': 0,*
-
-*\'uuid\': \'{DD8227AE-F924-30A2-20C4-C285C900FCF6}\'*
-
-*}*
-
-*\]*
-
-*},*
-
-*\'name\': \'new\',*
-
-*\'uuid\': \'{315C15AC-F5C5-C5F6-0169-E252086A9EE9}\'*
-
-*}*
 ```
 **Congratulations! You've now switched orders of a Route Group.**
 
