@@ -2,17 +2,11 @@ UC Administration is primarily driven through GUIs. 
 
 This session will help you become confident in using the AXL API. 
 
-![A person sitting on the grass with mud in their hands Description
-automatically generated with low
-confidence](media/image1.png){width="5.157764654418198in"
-height="3.4346522309711287in"}
+!(media/image1.png)
 
 Why are API's so hard with CUCM?
 
-![A person in a suit holding a paper and a paper Description
-automatically generated with low
-confidence](media/image2.png){width="3.640349956255468in"
-height="4.396422790901138in"}
+!(media/image2.png)
 
 You aren't alone, it's easy to get bogged down when getting started.
 
@@ -21,8 +15,7 @@ required to use AXL.
 
 ![A picture containing outdoor, text, firefighter, rescuer Description
 automatically
-generated](media/image3.png){width="5.698437226596676in"
-height="3.816522309711286in"}
+generated](media/image3.png)
 
 Let's get started.
 
