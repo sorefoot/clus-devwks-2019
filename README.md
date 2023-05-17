@@ -27,7 +27,7 @@ generated](media/image3.png)
 
 Let's get started.
 ___
-# Scenario 0 -- Prepare your environment
+# Scenario 0 Prepare your environment
 
 *We've already created this for you if everything works right. Please verify that the correct user and access role are
 applied in your environment. You'll need to create a user
@@ -63,7 +63,7 @@ Step 3 - Create a new Application User (*axlapiuser/dCloud123!*)
 >
 > ![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
 ___
-# Scenario 1 -- UCM AXL Use Cases using Postman
+# Scenario 1 UCM AXL Use Cases using Postman
 
 We'll Start by connecting Postman to our UCM server to ensure that your
 user is working and AXL is up and running.
