@@ -33,15 +33,14 @@ ___
 applied in your environment. You'll need to create a user
 with AXL API access if you are doing this in your own lab. *
 
--   Verify that the **axlapiuser** is created as an Application User.
+## Verify that the **axlapiuser** is created as an Application User.
 
-    -   If the user is there, verify that they are assigned to the **AXL
-        UCM** group with the **Standard AXL API Access** role. Now move
-        to Scenario 1. (Additional roles may be added to this user for other tasks.)
+ -   If the user is there, verify that they are assigned to the **AXL
+     UCM** group with the **Standard AXL API Access** role. Now move
+     to Scenario 1. (Additional roles may be added to this user for other tasks.)
+-   If not, continue creating the AXL Service Account
 
-    -   If not, continue creating the AXL Service Account
-
--   Create an AXL Service Account
+## Create an AXL Service Account
 
 Step 1 - Create an AXL User Group
 
