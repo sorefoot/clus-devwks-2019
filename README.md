@@ -29,16 +29,15 @@ Let's get started.
 ___
 # Scenario 0 -- Prepare your environment
 
-*If you are doing this in your own lab, you'll need to create a user
-with AXL API access. We've already created this for you if everything
-works right. Please verify that the correct user and access role are
-applied in your environment.*
+*We've already created this for you if everything works right. Please verify that the correct user and access role are
+applied in your environment. You'll need to create a user
+with AXL API access if you are doing this in your own lab. *
 
 -   Verify that the **axlapiuser** is created as an Application User.
 
     -   If the user is there, verify that they are assigned to the **AXL
         UCM** group with the **Standard AXL API Access** role. Now move
-        to Scenario 1.
+        to Scenario 1. (Additional roles may be added to this user for other tasks.)
 
     -   If not, continue creating the AXL Service Account
 
