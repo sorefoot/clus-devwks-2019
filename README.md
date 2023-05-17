@@ -349,7 +349,7 @@ low confidence](media/image10.png)
 
 **Add a phone:**
 
-Now you are ready to add a phone for Mr Lee.
+Now you are ready to add a phone for Mr Li.
 
 -   In the collection window, choose "Add new phone with new line".
     Select the Body window to set the variables for the new phone.
@@ -364,7 +364,7 @@ Now you are ready to add a phone for Mr Lee.
         <ns:addPhone>
             <phone>
                 <name>SEPA4A4A4A4A4A4</name>
-                 <description>8865 for Jim Lee</description>
+                 <description>8865 for Jim Li</description>
                 <product>Cisco 8865</product>
                 <model>Cisco 8865</model>
                 <class>Phone</class>
