@@ -433,7 +433,7 @@ with Python where the pypi library is limited.
 
 -   Open file in this directory called hello.py
 
-    -   Verify that this is in the file: `print(\'hello world\')`
+    -   Verify that this is in the file: `print('hello world')`
 
     -   Save the file
 
