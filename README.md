@@ -482,8 +482,7 @@ ucm = axl(username=username,password=password,cucm=cucm,cucm_version=version)
     Postman. Add the following to your script:
 ```python
 for phone in ucm.get_phones():
-
-print(phone.name)
+	print(phone.name)
 ```
 -   Save the file and run '**py .\\ucm.py'** in the terminal window.
 
@@ -499,7 +498,7 @@ print(phone.name)
 phoneslist = ucm.get_phones()
 
 for phones in phoneslist:
-print (phones)
+	print (phones)
 ```
 -   This will give us all the data for all the phones. That may not be
     useful for you. Let's pair it down to get the description, name,
@@ -510,7 +509,7 @@ print (phones)
 phoneslist = ucm.get_phones()
  
 for phones in phoneslist:
-print (phones.description, phones.name, phones['locationName']['_value_1'], phones.product)
+	print (phones.description, phones.name, phones['locationName']['_value_1'], phones.product)
 ```
 -   Your results should look like this after you save the file and run
     it:
