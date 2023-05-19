@@ -602,7 +602,7 @@ ucm.add_route_group(
 
 ```
 -   The order is TRUNK_TO_CUBE-US, IMP-SIP-Trunk, and ST_UCM_EMEA. Your
-    goal is to switch the US and AMEA members. We will be utilizing a
+    goal is to switch the US and EMEA members. We will be utilizing a
     dictionary to reorder the list. The deviceSelectionOrder variable
     will swap locations in the list. Here's the script:
 ```python
