@@ -437,7 +437,7 @@ with Python where the pypi library is limited.
 
     -   Save the file
 
--   In the terminalwindow type `py .\\hello.py` and press enter.
+-   In the terminalwindow type `py .\hello.py` and press enter.
 
 -   If everything was installed correctly, you should see "hello world"
     back from your python script:
