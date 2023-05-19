@@ -71,6 +71,7 @@ user is working and AXL is up and running.
 **Test Your Connection:**
 
 -   Open Postman on Workstation 1
+-   Create a request window by hitting the + button.
 
 -   Create your first request by entering the URL in the address bar
 
