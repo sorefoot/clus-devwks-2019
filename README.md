@@ -531,7 +531,7 @@ generated](media/image15.png)
 -   Update the Body with the following commands
 ```python
 for dn in ucm.get_directory_numbers():
-print(dn.pattern, dn.description, dn['routePartitionName']['_value_1'])
+	print(dn.pattern, dn.description, dn['routePartitionName']['_value_1'])
 ```
 ![A screenshot of a computer Description automatically
 generated](media/image16.png)
