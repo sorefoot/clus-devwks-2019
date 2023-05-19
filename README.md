@@ -544,7 +544,7 @@ at a new route group.
 
 -   Get the route group:
 ```python
-rg = ucm.get_route_group(name=\'new\')
+rg = ucm.get_route_group(name='new')
 print(rg)
 ```
 -   If this group doesn't exist, you can either add it via the GUI or
