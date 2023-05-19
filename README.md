@@ -406,6 +406,7 @@ Now you are ready to add a phone for Mr Li.
 
 *BONUS: With the tools you have at your fingertips, can you verify that
 the phone was created?*
+>Hint - We didn't associate the device to the user in the request, so you might have to use a different query.
 
 **Congratulations! Now you can go forward and be dangerous! (Or just
 progress to the next scenario).**
