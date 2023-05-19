@@ -288,7 +288,7 @@ we'll add a phone.
 
 **Download the collection and setup environment variables:**
 
--   Open a browser and navigate to cs.co/devwks-2019. Download the Cisco
+-   Open a browser and navigate to https://cs.co/devwks-2019. Download the Cisco
     CUCM.postman_collection.json file and save it to the C:\\DEVWKS-2019
     folder. If you don't have a github account, the file is also
     available for you under the \\answers folder.
