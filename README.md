@@ -4,11 +4,11 @@ Cisco Live DEVWKS-2019
 UC Administration is primarily driven through GUIs. 
 
 This session will help you become confident in using the AXL API.  These are the use cases we'll walk through as time allows:
-1 Provision a phone and line for a user
-2 Export configured DNs and associated data
-3 Export configured phones by type and location
-4 Update the order of members in a route group
-5 Get real time data from CUCM like active Jabber users
+- Provision a phone and line for a user
+- Export configured DNs and associated data
+- Export configured phones by type and location
+- Update the order of members in a route group
+- Get real time data from CUCM like active Jabber users
 
 The lab is divided into five main sections: 
 - [Scenario 0 Prepare your environment](#scenario-0-prepare-your-environment)
