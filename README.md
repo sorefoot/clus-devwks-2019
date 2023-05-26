@@ -11,10 +11,10 @@ This session will help you become confident in using the AXL API.  These are th
 - Get real time data from CUCM like active Jabber users
 
 The lab is divided into five main sections: 
-- [Scenario 0 Prepare your environment](#scenario-0-prepare-your-environment)
-- [Scenario 1 UCM AXL Use Cases using Postman](#scenario-1-ucm-axl-use-cases-using-postman)
+- [Section 0 Prepare your environment](#section-0-prepare-your-environment)
+- [Section 1 UCM AXL Use Cases using Postman](#section-1-ucm-axl-use-cases-using-postman)
 - [Section 1.A Postman Collections](#section-1a-postman-collections)
-- [Scenario 2 Python and AXL](#scenario-2-python-and-axl)
+- [Section 2 Python and AXL](#section-2-python-and-axl)
 - [Section 3 Zeep AXL, RIS70, and other APIs available in UCM.](#section-3-zeep-axl--ris70--and-other-apis-available-in-ucm)
 
 
@@ -42,7 +42,7 @@ Let's get started.
 Log into the dCloud envionrment
 https://expo.ciscodcloud.com/abp4h735zw4f1gl6kp5aaxa9u
 ___
-# Scenario 0 Prepare your environment
+# Section 0 Prepare your environment
 
 *We've already created this for you if everything works right. Please verify that the correct user and access role are
 applied in your environment. You'll need to create a user
@@ -52,7 +52,7 @@ with AXL API access if you are doing this in your own lab. *
 
  -   If the user is there, verify that they are assigned to the **AXL
      UCM** group with the **Standard AXL API Access** role. Now move
-     to Scenario 1. (Additional roles may be added to this user for other tasks.)
+     to Section 1. (Additional roles may be added to this user for other tasks.)
 -   If not, continue creating the AXL Service Account
 
 ## Create an AXL Service Account
@@ -79,7 +79,7 @@ Step 3 - Create a new Application User (*axlapiuser/dCloud123!*)
 > ![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
 </details>
 ___
-# Scenario 1 UCM AXL Use Cases using Postman
+# Section 1 UCM AXL Use Cases using Postman
 
 We'll Start by connecting Postman to our UCM server to ensure that your
 user is working and AXL is up and running.
