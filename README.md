@@ -1,10 +1,22 @@
 # clus-devwks-2019
 Cisco Live DEVWKS-2019
 
-
 UC Administration is primarily driven through GUIs. 
 
-This session will help you become confident in using the AXL API. 
+This session will help you become confident in using the AXL API.  These are the use cases we'll walk through as time allows:
+	1. Provision a phone and line for a user
+	2. Export configured DNs and associated data
+	3. Export configured phones by type and location
+	4. Update the order of members in a route group
+	5. Get real time data from CUCM like active Jabber users
+
+The lab is divided into five main sections: 
+- [Scenario 0 Prepare your environment](#scenario-0-prepare-your-environment)
+- [Scenario 1 UCM AXL Use Cases using Postman](#scenario-1-ucm-axl-use-cases-using-postman)
+- [Section 1.A Postman Collections](#section-1a-postman-collections)
+- [Scenario 2 Python and AXL](#scenario-2-python-and-axl)
+- [Section 3 Zeep AXL, RIS70, and other APIs available in UCM.](#section-3-zeep-axl--ris70--and-other-apis-available-in-ucm)
+
 
 ![A person sitting on the grass with mud in their hands Description
 automatically generated with low
