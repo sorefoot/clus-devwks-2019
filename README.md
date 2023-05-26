@@ -26,9 +26,14 @@ automatically
 generated](media/image3.png)
 
 Let's get started.
-___
-# Scenario 0 Prepare your environment
 
+Log into the dCloud envionrment
+https://expo.ciscodcloud.com/abp4h735zw4f1gl6kp5aaxa9u
+___
+<details>
+	<summary>
+	# Scenario 0 Prepare your environment
+	</summary>
 *We've already created this for you if everything works right. Please verify that the correct user and access role are
 applied in your environment. You'll need to create a user
 with AXL API access if you are doing this in your own lab. *
@@ -62,8 +67,10 @@ Step 3 - Create a new Application User (*axlapiuser/dCloud123!*)
 > following screen:
 >
 > ![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
+</details>
 ___
-# Scenario 1 UCM AXL Use Cases using Postman
+<details>
+	<summary># Scenario 1 UCM AXL Use Cases using Postman</summary>
 
 We'll Start by connecting Postman to our UCM server to ensure that your
 user is working and AXL is up and running.
@@ -278,6 +285,7 @@ We are going to find a user and then see if they need a hard phone.
     </soapenv:Body>
 </soapenv:Envelope>
 ```
+	</details>
 ___
 # Section 1.A Postman Collections
 
