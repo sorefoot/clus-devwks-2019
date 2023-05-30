@@ -432,7 +432,7 @@ progress to the next scenario).**
 
 ___
 
-# Scenario 2 Python and AXL
+# Section 2 Python and AXL
 
 This scenario will help you explore the pypi python library and other
 libraries that will help simplify the process. Pypi AXL is one of many
@@ -732,8 +732,8 @@ print(rgnew)
 
 ```
 **Congratulations! You've now switched orders of a Route Group.**
-
-# Section 3 Zeep AXL, RIS70, and other APIs available in UCM.
+___
+# Section 3 Zeep AXL, RIS70, and other APIs available in UCM
 
 Zeep is a Python SOAP client. We've loaded the and other requirements
 prior to this to help you. You will want to use tools like Zeep when you
