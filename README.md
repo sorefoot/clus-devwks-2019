@@ -79,6 +79,7 @@ Step 3 - Create a new Application User (*axlapiuser/dCloud123!*)
 > ![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
 </details>
 ___
+
 # Section 1 UCM AXL Use Cases using Postman
 
 We'll Start by connecting Postman to our UCM server to ensure that your
@@ -430,6 +431,7 @@ the phone was created?*
 progress to the next scenario).**
 
 ___
+
 # Scenario 2 Python and AXL
 
 This scenario will help you explore the pypi python library and other
