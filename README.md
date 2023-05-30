@@ -15,7 +15,7 @@ The lab is divided into five main sections:
 - [Section 1 UCM AXL Use Cases using Postman](#section-1-ucm-axl-use-cases-using-postman)
 - [Section 1.A Postman Collections](#section-1a-postman-collections)
 - [Section 2 Python and AXL](#section-2-python-and-axl)
-- [Section 3 Zeep AXL, RIS70, and other APIs available in UCM](#section-3-zeep-axl--ris70--and-other-apis-available-in-ucm)
+- [Section 3 Zeep AXL, RIS70, and other APIs available in UCM](#section-3-zeep-axl-ris70-and-other-apis-available-in-ucm)
 
 
 ![A person sitting on the grass with mud in their hands Description
