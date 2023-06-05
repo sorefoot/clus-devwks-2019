@@ -256,9 +256,9 @@ We are going to find a user and then see if they need a hard phone.
 -   **You've found a lot of information. Now let's filter it down to
     just the associated devices and see if he's got a phone**
 
-    -   **Duplicate the tab and replace the body with the
-        \<returnedTags\> element and the \<associatedDevices\> section
-        added. The % is used as a wild card.**
+-   **Duplicate the tab and replace the body with the
+    \<returnedTags\> element and the \<associatedDevices\> section
+    added. The % is used as a wild card.**
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.cisco.com/AXL/API/12.5">
                 <soapenv:Header/>
@@ -295,7 +295,7 @@ We are going to find a user and then see if they need a hard phone.
     </soapenv:Body>
 </soapenv:Envelope>
 ```
-	</details>
+
 ___
 # Section 1.A Postman Collections
 
